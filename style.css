@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter";
+}
+body {
+    overflow-x: hidden;
+    background: linear-gradient(#39519f, #3939e7);
+    z-index: -999;
+}
+nav {
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.logo {
+    color: #ffff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+ul {
+    gap: 25px;
+    font-size: 1.2rem;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+ul li a {
+    color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 0.4rem 1rem;
+}
+ul li a:hover,
+a.active {
+    color: #0b0235;
+    background: #ffffff;
+}
+.header {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header #text {
+    position: absolute;
+    color: #fefefe;
+    font-size: clamp(3rem, 7.5vw, 8rem);
+    white-space: nowrap;
+    letter-spacing: 3px;
+    z-index: 5;
+    right: -800px;
+}
+button {
+    font-size: 1rem;
+    position: absolute;
+    color: #fefefe;
+    text-decoration: none;
+    padding: 8px 30px;
+    display: inline-block;
+    border: 2px solid #fefefe;
+    border-radius: 25px;
+    background: transparent;
+    z-index: 7;
+    letter-spacing: 0.51px;
+    transform: translateY(200px);
+}
+.store {
+    padding: 2rem;
+    background-color: #fefefe;
+}
+.grid {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+.store img {
+    width: 50%;
+}
+footer {
+    color: #fefefe;
+    font-size: 1rem;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b0235;
+}
+footer span {
+    color: red;
+}
